@@ -63,7 +63,6 @@ export default function BasicMenu() {
             <Route path="/resume" element={<ResumeCopy/>} />
             <Route path="/works" element={<Works/>} />
             <Route path="/contacts" element={<ContactsCopy/>} />
-            <Route path="/form" element={<Form/>} />
         </Routes>
         </BrowserRouter>
     </div>

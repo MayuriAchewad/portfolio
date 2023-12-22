@@ -3,8 +3,8 @@ import React from "react";
 
 export const Resume = () => {
     return(
-        <Card sx={{padding:15, bgcolor:"skyblue"}}>
-        <Grid container spacing={2}>
+        <Card  sx={{bgcolor:"skyblue"}}>
+        <Grid container spacing={2} sx={{padding:{xs:1, sm:2, md: 6 , lg: 8, xl: 10}}}>
             <Grid item xs={4}>
                 <h3>
                     EDUCATION

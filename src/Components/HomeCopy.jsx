@@ -10,7 +10,7 @@ import { ContactsCopy } from "./ContactsCopy";
 
 export const HomeCopy = () => {
     return(
-        <Grid container spacing={2} align="center" sx={{bgcolor:"skyblue",  padding:22, height:"100vh"}}>
+        <Grid container spacing={2} align="center" sx={{bgcolor:"skyblue", padding:{xs:10, sm:16, md: 18 , lg: 20, xl: 22}, height:"100vh"}}>
             <Grid item  xs={12} sm={12} md={12} lg={12} xl={12} sx={{display:"flex",justifyContent:"center"}} className="intro" >
                 <h1>
                     I'm Mayuri Achewad

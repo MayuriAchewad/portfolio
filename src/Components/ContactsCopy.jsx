@@ -51,7 +51,7 @@ export const ContactsCopy = () => {
 
     return(
         <form>
-        <Grid container spacing={2} sx={{bgcolor:"black", padding:10}} >
+        <Grid container spacing={2} sx={{bgcolor:"black", padding:{xs:3, sm:4, md: 6 , lg: 8, xl: 10}}} >
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                 {/* <h1 align="center" style={{color:"white", fontSize:55}}>Contact</h1> */}
             </Grid>

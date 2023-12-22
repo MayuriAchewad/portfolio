@@ -6,7 +6,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 export const ResumeCopy = () => {
     return(
-        <Card sx={{padding:15, bgcolor:"skyblue"}}>
+        <Card sx={{padding:15, bgcolor:"skyblue",padding:{xs:3, sm:5, md: 7 , lg: 9, xl: 12}}}>
         <Grid container spacing={2}>
             <Grid item  xs={12} sm={12} md={12} lg={4} xl={4}>
                 <h3>

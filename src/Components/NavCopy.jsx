@@ -41,13 +41,6 @@ export const NavCopy = () => {
                           
                         </Link>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Link to="form">
-                           
-                                <h2>Form</h2>
-                          
-                        </Link>
-                    </Grid>
                 </Grid>
         
     )
