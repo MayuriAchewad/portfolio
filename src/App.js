@@ -2,15 +2,15 @@ import React from 'react';
 import "./Projects/Form/form.css"
 
 import "./Components/Portfolio.css"
-import { Landing } from './Components/Landing';
+import BasicMenu from './Components/MenuBar';
 
 
 
 function App() {
   // const mystore=configStore()
   return (
-    <div className="App">
-      <Landing/>
+    <div className="main">
+      <BasicMenu/>
       
     </div>
   );

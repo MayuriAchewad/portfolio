@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
     return(        
-                <Grid container spacing={2} sx={{position:"fixed", width:"800px", bgcolor:"transparent", marginTop:0, marginLeft:35}}>
+                <Grid container spacing={2} sx={{position:"fixed", bgcolor:"transparent", margin:1}}>
                     <Grid item xs={2}>
-                        <Link to="/">
+                        <Link to="/home">
                             <Button sx={{fontWeight:"bold"}} fullWidth variant="text" color="warning">
                                 home
                             </Button>

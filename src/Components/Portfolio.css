@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
 .twitter:hover{
     opacity: 0.5;
 }
@@ -14,12 +22,15 @@
 }
 
 .download{
-    padding:15px;
+    padding:5px;
     color:white;
     background-color:#404040;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     margin-top: 200px;
+}
+p{
+    text-align: justify;
 }
 
 .download:hover{
@@ -29,13 +40,133 @@
 
 .intro h1{
     position: relative;
-    font-size: 6.6vw;
+    font-size: 6vw;
     color: #252839;
     -webkit-text-stroke: 0.3vw #383d52;
     text-transform: uppercase;
 }
+.wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
 
+.card{
+    
+    height: 150px;
+    margin-top: 20px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5),rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY((30px));
+    transition: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .info h1{
+    margin: 0;
+}
+.card .info{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+.card .info .btn{
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    width: 90%;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+.cnt h2{
+    color: white;
+    font-size: 40px;
+    margin-top: -5px;
+
+}
+
+.cnt p{
+    color: white;
+    font-size: 20px;
+    margin:2px;
+
+}
+/* .div_center{
+    margin-left: 420px;
+
+} */
+@media (max-width:1374px) {
+    * .div_center{
+        margin-left: 400px;
+    }    
+}
+/* @media (max-width:768px) {
+    .card img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media (min-width:767px) {
+    .card img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+} */
 /* .intro h1::before{
     content: attr(data-text);
     position: absolute;

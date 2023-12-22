@@ -1,17 +1,17 @@
-import { Grid, Avatar, Card, CardContent } from "@mui/material";
+import { Grid, Avatar, Button, CardContent } from "@mui/material";
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 
-
-export const About = () => {
+export const AboutCopy = () => {
     return(
-        <Grid container spacing={2} sx={{bgcolor:"black", padding:10,height:"100vh"}}>
+        <Grid container spacing={2} sx={{bgcolor:"black", padding:10,height:"110vh"}}>
             <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-                <Avatar sx={{width:300, height:300}} src="/images/mayuri.jpg"/>
+                <Avatar sx={{width:{xs:100, sm:150, md:200, lg:250, xl:300}, height:{xs:100, sm:150, md:200, lg:250, xl:300}}} src="/images/mayuri.jpg"/>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
                 <h2 style={{color:"white"}}>About Me</h2>
                 <p style={{color:"grey"}}>
-                    Hi there ! I am Mayuri !  You might also know me as Frontend Web Developer. I've been coding for over 2.5 Years now. As of now I'am willing 
+                    Hi there ! I am Mayuri !  You might also know me as Frontend Web Developer. I've been coding for over 2+ Years now. As of now I'am willing 
                     and excited to work with both startups and large corporations to build & scale their companies. 
                     Along the journey I realised my passion existed in helping and pursue my dreams as upcoming 
                     developers. With this passion, as of now I  have done  some projects  related to HTML5, CSS3, 
@@ -20,9 +20,9 @@ export const About = () => {
                     development.
                 </p>
             </Grid>
-            <Grid item xs={4}>
+            <Grid xs={12} sm={12} md={12} lg={4} xl={4}>
             </Grid>
-            <Grid item xs={2.7}>
+            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                 <h2 style={{color:"white"}}>Contact Details</h2>
                 <p style={{color:"grey"}}>
                     Mayuri Achewad
@@ -37,12 +37,13 @@ export const About = () => {
                     Nanded, Maharashtra, 431602
                 </p>
             </Grid>
-            <Grid item xs={3}>
-                
-                        <a class="download" href="/assets/Resume.pdf" style={{}}>
-                            <span style={{marginRight:10}}><img src="/images/download.gif" alt="" /></span>
-                         Download resume
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                <div className="div_center">
+
+                        <a class="download" href="/assets/MyResume.pdf" >
+                                <Button sx={{width:{xs:100, sm:150, md:200, lg:250, xl:1000}}}><FaDownload />Download resume</Button>
                         </a>
+                </div>
                     
             </Grid>
            
