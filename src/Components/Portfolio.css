@@ -150,11 +150,11 @@ input{
     margin-left: 420px;
 
 } */
-@media (max-width:1374px) {
+/* @media (max-width:1374px) {
     * .div_center{
         margin-left: 400px;
     }    
-}
+} */
 /* @media (max-width:768px) {
     .card img {
         max-width: 100%;
