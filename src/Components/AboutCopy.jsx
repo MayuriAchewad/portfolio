@@ -7,7 +7,7 @@ export const AboutCopy = () => {
     <Grid
       container
       spacing={2}
-      sx={{ bgcolor: "black", padding: 10, height: "110vh" }}
+      sx={{ bgcolor: "black", padding: 10, height: "100%" }}
     >
       <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
         <Avatar

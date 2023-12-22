@@ -11,7 +11,7 @@ export const Works = () => {
         {img:"https://i.ytimg.com/vi/2QIMUBilooc/maxresdefault.jpg", info:"sedtrfghjb esthdfcgvnb tfghvjb", heading:"heading1"},
     ]
     return(
-        <Grid container spacing={2} align="center" sx={{padding:10,height:"100vh", bgcolor:"black", color:"white"}}>
+        <Grid container spacing={2} align="center" sx={{padding:10,height:"100%", bgcolor:"black", color:"white"}}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <h1>
                 CHECK OUTS SOME OF MY WORKS.
