@@ -121,7 +121,7 @@ export const ContactsCopy = () => {
             <p >Maharashtra, 431602</p> 
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <p >+91 9699813523</p> 
+            <p >+91 9699******</p> 
             </Grid>
 
             
