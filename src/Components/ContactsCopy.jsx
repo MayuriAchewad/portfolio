@@ -11,14 +11,14 @@ export const ContactsCopy = () => {
     const[msg, setMsg] = useState("")
     const[data, setData] = useState([])
 
-    const getData = async() => {
-        const result =  await axios.get("http://localhost:2023/getdata");
-        setData(result.data)
-    }
+    // const getData = async() => {
+    //     const result =  await axios.get("http://localhost:2023/getdata");
+    //     setData(result.data)
+    // }
 
-    useEffect(()=>{
-        getData()
-    },[])
+    // useEffect(()=>{
+    //     getData()
+    // },[])
 
     const inputRef=useRef()
     const emailRef=useRef()
@@ -27,12 +27,12 @@ export const ContactsCopy = () => {
 
     const handleSubmit=async(e)=>{
         const payload = {name, email, subject, message}
-        await axios.post("http://localhost:2023/adddata",payload)
+       
         setName("")
         setEmail("")
         setSubject("");
         setMessage("")
-        getData()
+        // getData()
         alert(`You have submitted`)
     }
 
