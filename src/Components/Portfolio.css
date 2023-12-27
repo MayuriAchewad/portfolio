@@ -7,15 +7,8 @@
     justify-content: center;
 }
 .aboutpage, .resumePage, .workPage, .cntPage{
-    background: radial-gradient(circle at 100%, #001f4d, #002966 50%, #b3b3ff 75%, #001433 75%);
+    background: radial-gradient(circle at 100%, #001f4d, #002966 50%, #668cff 75%, #001433 75%);
 }
-/* .homepage{
-    background: url("/public/bg/mypic.jpg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
 
 .homepage {
     position: relative; 

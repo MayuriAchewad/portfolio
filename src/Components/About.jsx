@@ -83,9 +83,12 @@ export const About = () => {
               className="download"
               fullWidth
               variant="contained"
-              color="inherit"
+             sx={{ 
+             fontSize: 20,
+             bgcolor: "#404040",
+             padding: 2,boxShadow:"0px 10px 10px  black"}}
             >
-              <a href="/assets/MyResume.pdf">
+              <a href="/assets/MyResume.pdf" style={{color:"white",textDecoration:"none"}}>
                 <FaDownload />
                 Download resume
               </a>
