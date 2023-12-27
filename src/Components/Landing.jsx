@@ -1,29 +1,27 @@
-import { Grid } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Home } from "./Home";
-// import { About } from "./About";
-// import { Resume } from "./Resume";
 import { Works } from "./Works";
-// import { Contacts } from "./Contacts";
-// import { Nav } from "./Nav";
-import { AboutCopy } from "./AboutCopy";
-import { HomeCopy } from "./HomeCopy";
-import { ResumeCopy } from "./ResumeCopy";
+import { Home } from "./Home";
+import { Resume } from "./Resume";
 import { ContactsCopy } from "./ContactsCopy";
-import { NavCopy } from "./NavCopy";
+import { Testimonials } from './Testimonials';
+import { About } from './About';
+import NavBar from "./NavBar";
 
-export const Landing = ()=> {
-    return(
-        <BrowserRouter>
-        <NavCopy/>
-        <Routes>
-            <Route path="/" element={<HomeCopy/>} />
-            <Route path="/about" element={<AboutCopy/>} />
-            <Route path="/resume" element={<ResumeCopy/>} />
+const Landing = () => {
+  return (
+    <BrowserRouter>
+    <NavBar/>
+    <Routes>
+            <Route path="/" element={<Testimonials/>} />
+            <Route path="/home" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/resume" element={<Resume/>} />
             <Route path="/works" element={<Works/>} />
             <Route path="/contacts" element={<ContactsCopy/>} />
         </Routes>
         </BrowserRouter>
-    )
+  )
 }
+
+export default Landing;

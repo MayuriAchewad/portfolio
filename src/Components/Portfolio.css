@@ -6,6 +6,38 @@
     display: flex;
     justify-content: center;
 }
+.aboutpage, .resumePage, .workPage, .cntPage{
+    background: radial-gradient(circle at 100%, #001f4d, #002966 50%, #b3b3ff 75%, #001433 75%);
+}
+/* .homepage{
+    background: url("/public/bg/mypic.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+.homepage {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage::before {    
+      content: "";
+      background-image: url('/public/bg/mypic.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.35;
+}
 .twitter:hover{
     opacity: 0.5;
 }
@@ -52,11 +84,11 @@ p{
 }
 
 .card{
-    
-    height: 150px;
+    border-radius: 20px;
+   height: 200px;
     margin-top: 20px;
-    padding: 2rem 1rem;
-    background: #fff;
+    padding: 4rem 3rem;
+    background: yellowgreen;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -81,12 +113,15 @@ p{
 }
 .card:hover::before{
     opacity: 1;
+  
 }
 .card img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+    border-radius: 20px;
     position: absolute;
+    padding: 2px;
     top: 0;
     left: 0;
 
@@ -96,21 +131,21 @@ p{
     z-index: 3;
     color: #fff;
     opacity: 0;
-    transform: translateY((30px));
+    transform: translateY((10px));
     transition: 0.5s all;
 }
 .card:hover .info{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(60px);
 }
 .card .info h1{
     margin: 0;
 }
 .card .info{
-    letter-spacing: 1px;
-    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-size: 10px;
     margin-top: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .card .info .btn{
     text-decoration: none;
@@ -146,6 +181,15 @@ input{
     margin:2px;
 
 }
+
+.resumePage h2{
+    color: white;
+}
+.resumePage p, span,h3{
+    color: grey;
+}
+
+
 /* .div_center{
     margin-left: 420px;
 
