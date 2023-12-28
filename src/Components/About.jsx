@@ -5,6 +5,7 @@ import { FaDownload } from "react-icons/fa";
 export const About = () => {
   return (
     <Card
+    id="about"
       sx={{
         padding: { xs: 4, sm: 4, md: 6, lg: 8, xl: 10 },
         height: "100%",
@@ -20,7 +21,7 @@ export const About = () => {
                 height: { xs: 100, sm: 150, md: 200, lg: 250, xl: 300 },
                 boxShadow:"0px 1px 10px 10px black"
               }}
-              src="/bg/profile.jpg"
+              src="/bg/profile2.jpg"
             />
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
@@ -37,21 +38,12 @@ export const About = () => {
               projects and solves the problems that will help me to enter the
               world of web development.
             </p>
-          </Grid>
-          <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
-          <Grid
-            sx={{ color: "white" }}
-            item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={8}
-            xl={8}
-          >
-            <p>Here are a few technologies I've been working with recently:</p>
-          </Grid>
-          <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
-          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+            <br />
+            <br />
+            <p style={{color:"white"}}>Here are a few technologies I've been working with recently:</p>
+            <Grid container spacing={2}>
+
+            <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
             <ul style={{ color: "grey", marginLeft: 15 }}>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -59,7 +51,6 @@ export const About = () => {
               <li>React JS</li>
             </ul>
           </Grid>
-
           <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
             <ul style={{ color: "grey", marginLeft: 15 }}>
               <li>Material UI</li>
@@ -67,16 +58,14 @@ export const About = () => {
               <li>Tailwind CSS</li>
             </ul>
           </Grid>
-          <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
-          <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
-          <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-            <h2 style={{ color: "white" }}>Contact Details</h2>
-            <p style={{ color: "grey" }}>Mayuri Achewad</p>
-            <p style={{ color: "grey" }}>Nanded, Maharashtra, 431602</p>
-            <p style={{ color: "grey" }}>+91 9699813523</p>
-            <p style={{ color: "grey" }}>Nanded, Maharashtra, 431602</p>
+            </Grid>
           </Grid>
-          <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
+         
+       
+          
+
+         
+          
           <Grid xs={12} sm={12} md={12} lg={4} xl={4}></Grid>
           <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
             <Button

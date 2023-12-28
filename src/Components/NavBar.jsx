@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navList } from "./NavList";
 
@@ -28,7 +28,7 @@ const NavBar = () => {
   return (
     <AppBar position="static" sx={{bgcolor:"#000033",color:"whitesmoke"}}>
       <Toolbar>
-        <IconButton
+        {/* <IconButton
           sx={{ display: { xs: "none", md: "flex" } }}
           size="large"
           edge="start"
@@ -36,18 +36,20 @@ const NavBar = () => {
           area-aria-label="logo"
         >
           <LocalLibraryIcon />
-        </IconButton>
+        </IconButton> */}
         <Typography
+        fontStyle="italic"
           variant="h6"
+          fontFamily="cursive"
           component="div"
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
         >
-          My Portfolio
+          Time To Program
         </Typography>
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           {navList.map((item) => (
             <Link to={item.path}>
-              <Button sx={{color:"whitesmoke"}}>{item.title}</Button>
+              <Button sx={{color:"whitesmoke",margin:"5px 25px"}}>{item.title}</Button>
             </Link>
           ))}
         </Box>
@@ -80,7 +82,7 @@ const NavBar = () => {
               ))}
             </MenuList>
           </Menu>
-          <IconButton
+          {/* <IconButton
             sx={{ display: { xs: "flex", md: "none" } }}
             size="large"
             edge="start"
@@ -88,7 +90,7 @@ const NavBar = () => {
             area-aria-label="logo"
           >
             <LocalLibraryIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h6"
             

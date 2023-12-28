@@ -20,6 +20,7 @@ export const Works = () => {
   ];
   return (
     <Card
+    id="works"
       align="center"
       className="workPage"
       sx={{

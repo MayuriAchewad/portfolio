@@ -10,6 +10,7 @@ import { ContactsCopy } from "./ContactsCopy";
 export const Home = () => {
   return (
     <Card
+    id="home"
       align="center"
       className="homepage"
       sx={{
@@ -46,10 +47,25 @@ export const Home = () => {
               justifyContent: "center",
             }}
           >
-            <span className="myself">
-              Live in Nanded, Maharashtra.{" "}
-              <span style={{ fontWeight: "bold" }}>I am a WEB DEVELOPER.</span>
-            </span>
+            <p style={{ fontWeight: "bold",fontSize:"40px",color:"whitesmoke" }} className="myself">
+               Building Digital Experience That Inspire{" "}
+            </p>
+            </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+            sx={{
+                color:"grey",
+              fontSize: 22,
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+              <p >Passionate Frontend Developer | Transforming ideas into Seamless and Visually Stunning Web Solutions.</p>
           </Grid>
           <Grid
             item
@@ -58,13 +74,13 @@ export const Home = () => {
             md={12}
             lg={12}
             xl={12}
-            sx={{ display: "flex", justifyContent: "center" }}
+            sx={{ display: "flex", justifyContent: "center" ,marginTop:3}}
           >
             <a href="https://twitter.com/MR65882853">
               <TwitterIcon
                 style={{
                   marginLeft: 30,
-                  marginTop: "-10px",
+                  
                   borderRadius: "100%",
                   fontWeight: "lighter",
                   height: 30,
@@ -78,7 +94,6 @@ export const Home = () => {
               <LinkedInIcon
                 style={{
                   marginLeft: 30,
-                  marginTop: "-10px",
                   borderRadius: "100%",
                   fontWeight: "lighter",
                   height: 30,
@@ -91,7 +106,6 @@ export const Home = () => {
               <InstagramIcon
                 style={{
                   marginLeft: 30,
-                  marginTop: "-10px",
                   borderRadius: "100%",
                   fontWeight: "lighter",
                   height: 30,
@@ -104,7 +118,6 @@ export const Home = () => {
               <FacebookIcon
                 style={{
                   marginLeft: 30,
-                  marginTop: "-10px",
                   borderRadius: "100%",
                   fontWeight: "lighter",
                   height: 30,
@@ -117,7 +130,6 @@ export const Home = () => {
               <GitHubIcon
                 style={{
                   marginLeft: 30,
-                  marginTop: "-10px",
                   borderRadius: "100%",
                   fontWeight: "lighter",
                   height: 30,

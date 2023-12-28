@@ -56,7 +56,7 @@ export const ContactsCopy = () => {
   };
 
   return (
-    <Card   className="cntPage"
+    <Card id="contacts"  className="cntPage"
     sx={{ padding: { xs: 3, sm: 4, md: 6, lg: 8, xl: 10 } }}
   >
       <CardContent>
