@@ -1,8 +1,16 @@
 import { Card, CardContent, Grid } from "@mui/material";
 import React from "react";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export const Works = () => {
   const data = [
+    {
+      img: "./images/Digital_clock.png",
+      info:
+        "This application utilizes HTML for structuring the content, CSS for styling the appearance, and JavaScript for handling real-time updates of the clock.",
+      heading: "Digital Clock",
+      url: "https://mayuriachewad.github.io/Digital-Clock/",
+    },
     {
       img: "./images/Todo.png",
       info:
@@ -44,7 +52,7 @@ export const Works = () => {
                     <p>{item.info}</p>
                     <br />
                     <a href={item.url} className="btn">
-                      Read More
+                    <FaArrowUpRightFromSquare />
                     </a>
                   </div>
                 </div>

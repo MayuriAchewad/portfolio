@@ -5,7 +5,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { ContactsCopy } from "./ContactsCopy";
+
+const socialLink = [
+  {url:"https://twitter.com/MR65882853", icon:TwitterIcon},
+  
+]
 
 export const Home = () => {
   return (
