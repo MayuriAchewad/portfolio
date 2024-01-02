@@ -12,6 +12,13 @@ export const Works = () => {
       url: "https://mayuriachewad.github.io/Digital-Clock/",
     },
     {
+      img: "./images/NetFlix.png",
+      info:
+        "Developed a high-fidelity clone of the Netflix application using React.js and Tailwind CSS.",
+      heading: "NetFlix App",
+      url: "https://drive.google.com/drive/folders/1yE65RvIbpEe-cuYNt8NBDvAJzosTqnjQ",
+    },
+    {
       img: "./images/Todo.png",
       info:
         "ToDo list with crud operation by using different technologies like HTML5, CSS3, React JS, Material UI",
@@ -23,7 +30,7 @@ export const Works = () => {
       info:
         "Create Login and registration form with formik and yup method using React JS , material UI, HTML, CSS",
       heading: "Validation Form",
-      url: "https://formwithyupandformik.netlify.app/",
+      url: "https://formvalidationwithformikandyup.netlify.app/",
     },
   ];
   return (

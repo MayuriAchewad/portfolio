@@ -7,8 +7,12 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const socialLink = [
-  {url:"https://twitter.com/MR65882853", icon:TwitterIcon},
-  
+  {url:"https://twitter.com/MR65882853", icon:<TwitterIcon/>},
+  {url:"https://www.linkedin.com/in/mayuri-achewad-2b0826259/", icon:<LinkedInIcon/>},
+  {url:"http://www.instagram.com/mayuriachewad", icon:<InstagramIcon/>},
+  {url:"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fmayuri.achewad%2F&ext=1685969857&hash=AeZyxMLvtl4fZjzl30s", icon:<FacebookIcon/>},
+  {url:"https://github.com/MayuriAchewad", icon:<GitHubIcon/>},
+
 ]
 
 export const Home = () => {
@@ -78,9 +82,18 @@ export const Home = () => {
             md={12}
             lg={12}
             xl={12}
-            sx={{ display: "flex", justifyContent: "center" ,marginTop:3}}
+           
           >
-            <a href="https://twitter.com/MR65882853">
+            {
+              socialLink.map((item)=>(
+               
+                <a href={item.url}>
+                  {item.icon}
+                </a>
+               
+              ))
+            }
+            {/* <a href="https://twitter.com/MR65882853">
               <TwitterIcon
                 style={{
                   marginLeft: 30,
@@ -141,7 +154,7 @@ export const Home = () => {
                   color: "black",
                 }}
               />
-            </a>
+            </a> */}
           </Grid>
         </Grid>
       </CardContent>

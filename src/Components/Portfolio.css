@@ -18,6 +18,16 @@
     rgba(0, 0, 51, 0.9) 75%
   );
 }
+.homepage a{
+  text-decoration: none;
+  margin-top: 3px;
+  margin-bottom: 50px;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
 
 .homepage {
   position: relative;
@@ -147,7 +157,7 @@
 }
 .card .info {
   letter-spacing: 0.5px;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 18px;
   margin-bottom: 0px;
 }
