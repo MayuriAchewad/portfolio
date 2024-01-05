@@ -16,7 +16,7 @@ export const Works = () => {
       info:
         "Developed a high-fidelity clone of the Netflix application using React.js and Tailwind CSS.",
       heading: "NetFlix App",
-      url: "https://drive.google.com/drive/folders/1yE65RvIbpEe-cuYNt8NBDvAJzosTqnjQ",
+      url: "https://netflixclonebymayuri.netlify.app/",
     },
     {
       img: "./images/Todo.png",
