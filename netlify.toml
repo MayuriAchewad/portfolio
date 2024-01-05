@@ -1,0 +1,143 @@
+Skip to content
+DEV Community
+Search...
+
+Log in
+Create account
+
+1
+Jump to Comments
+22
+Save
+
+Cover image for Deploy your React app using Netlify
+bhuma08
+bhuma08
+Posted on 14 Nov 2020
+
+
+8
+
+2
+Deploy your React app using Netlify
+#
+react
+#
+webdev
+#
+beginners
+#
+vscode
+Now that you have built your very first web application using React, it's time to deploy it. I will be using Netlify as it's just simple and straight forward. This blog is for apps that only contain frontend or client side. So before you follow along, please make sure that your app doesn't have a server side or backend.
+
+First, make sure you have the Netlify command line tool. If not, in your terminal run: npm install netlify-cli -g
+
+You may now login to your netlify account using your terminal: netlify login
+
+Next, create a file: netlify.toml in the root directory of your project in the code editor and insert the following:
+[build]
+    command = "npm run build" 
+    publish = "/dist" 
+
+[[redirects]]
+    from = "/*" 
+    to = "/index.html" 
+    status = 200 
+If you're unsure about the name of your publish folder, you can check that in your webpack.config.js file.
+output: {
+    path: path.resolve("dist"), //THIS ONE!!!
+    filename: "bundle.js", 
+    publicPath: "/",
+},
+Now, in your terminal use the following commands:
+netlify init
+You may deploy your app manually or using your git repository. You may name your site (this can be changed later)!
+npm run build
+netlify deploy
+netlify deploy --prod
+
+Your site is now live and ready to go! :)
+
+Top comments (1)
+Subscribe
+pic
+Add to the discussion
+Code of Conduct • Report abuse
+profile
+Pulumi
+PROMOTED
+
+Pulumi learning image
+
+Build, configure, and deploy a real-life, modern application with Pulumi
+In this tutorial, you will learn more about cloud computing by exploring how to use Pulumi to build, configure, and deploy a real-life, modern application using Docker. You will create a frontend, a backend, and a database to deploy the Pulumipus Boba Tea Shop. Along the way, you’ll learn more about how Pulumi works.
+
+Read the Tutorial
+
+Read next
+chandra_prakash_1486 profile image
+Python vs. Java: Choosing the Right Backend Language
+Chandra Prakash Tekwani - Dec 26 '23
+
+kothariji profile image
+The Ultimate React Reading List: Top 15 Must-Read Articles in 2024
+Dhruv Kothari - Jan 1
+
+jayjo87 profile image
+smart watch fan
+jay jordan - Dec 25 '23
+
+ryusui-francois profile image
+Boost Your Laravel Development: 5 Lesser-Known Artisan Commands
+Ryusui Francois - Dec 28 '23
+
+
+bhuma08
+Follow
+Just started coding and I'm acting like I know it all
+JOINED
+24 Jul 2020
+More from bhuma08
+SQLAlchemy Core in Python: Getting Started
+#sql #python #database #beginners
+SQL for Beginners
+#sql #database #beginners
+Django: User Authentication using knox
+#django #python #database #vscode
+DEV Community
+
+OpenAI
+
+How will ChatGPT change the way we code?
+We're excited to find out, and the DEV community is the perfect place to explore this together.
+
+Join the DEV community. It's free and only takes a minute.
+Stay up-to-date on the latest AI content.
+
+[build]
+    command = "npm run build" 
+    publish = "/dist" 
+
+[[redirects]]
+    from = "/*" 
+    to = "/index.html" 
+    status = 200 
+DEV Community — A constructive and inclusive social network for software developers. With you every step of your journey.
+
+Home
+Podcasts
+Videos
+Tags
+FAQ
+Forem Shop
+Advertise on DEV
+About
+Contact
+Guides
+Software comparisons
+Code of Conduct
+Privacy Policy
+Terms of use
+Built on Forem — the open source software that powers DEV and other inclusive communities.
+
+Made with love and Ruby on Rails. DEV Community © 2016 - 2024.
